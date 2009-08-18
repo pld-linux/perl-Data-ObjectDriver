@@ -28,6 +28,8 @@ BuildRequires:	perl(Test::Exception)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_noautoreq	'perl(DBD::Oracle)' 'perl(DBI::db)'
+
 %description
 Data::ObjectDriver is an object relational mapper, meaning that it maps
 object-oriented design concepts onto a relational database.
