@@ -8,7 +8,7 @@ Summary:	Data::ObjectDriver - Simple, transparent data interface, with caching
 #Summary(pl.UTF-8):	
 Name:		perl-Data-ObjectDriver
 Version:	0.09
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -27,7 +27,7 @@ BuildRequires:	perl(Test::Exception)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(DBD::Oracle)' 'perl(DBI::db)'
+%define		_noautoreq_perl		DBD::Oracle DBI::db
 
 %description
 Data::ObjectDriver is an object relational mapper, meaning that it
